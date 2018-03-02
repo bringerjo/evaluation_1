@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Application de gestion de budget mensuel</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+</head>
+<body>
+	<!-- ******  -->
+	<!-- HEADER  -->  
+	<!-- ******  -->
+	<header>
+		<h1>Calcul prévisionnel de budget mensuel</h1>
+	</header>
+	<section>
+		<!-- *************  -->
+		<!-- EARNINGS PART  -->
+		<!-- *************  -->
+		<div class="earnings">
+			<div class="earnings-title">
+				<p class="earnings-title--left">Revenus</p>
+				<p class="earnings-title--right">Montant en €</p>	
+			</div>
+			<div class="earnings-subtitle">
+				<p>Salaire et autres revenus</p>
+				<button class="earnings-add--line" id="earnings-btn--addLine"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Ajouter une ligne</button>	
+			</div>
+			<div class="earnings-information">
+				<label>Salaire</label>
+				<div class="input">
+					<input type="number" class="ipt" class="ipt-earnings" id="field-salary" name="salary" value="0">
+				</div>
+			</div>
+			<div class="earnings-information">
+				<label>Les aides (allocations, etc.)</label>
+				<div class="input">
+					<input type="number" class="ipt" class="ipt-earnings" id="field-help" name="help" value="0">
+				</div>
+			</div>			
+			<div class="earnings-information">
+				<label>Les rentes</label>
+				<div class="input">
+					<input type="number" class="ipt" class="ipt-earnings" id="field-annuities" name="annuities" value="0">
+				</div>
+			</div>
+			<div class="earnings-information">
+				<label>Autres</label>
+				<div class="input">
+					<input type="number" class="ipt" class="ipt-earnings" id="field-others" name="others" value="0">
+				</div>
+			</div>	
+		</div>
+		<!-- *************  -->
+		<!-- SPENDING PART  -->
+		<!-- *************  -->
+		<div class="spending">
+			<div class="spending-title">
+				<p class="spending-title--left">Dépenses</p>
+				<p class="spending-title--right">Montant en €</p>	
+			</div>
+			<div class="spending-subtitle">
+				<p>Les dépenses fixes</p>
+			</div>	
+			<div class="spending-information">
+				<label>Loyer et charges (obligatoire)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-rent" name="rent" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Remboursement de crédits</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-credits" name="credits" value="0">
+				</div>
+			</div>			
+			<div class="spending-information">
+				<label>Eau/électricité/gaz (obligatoire)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-water" name="water" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Téléphone/internet (obligatoire)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-tel" name="tel" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Assurance habitation</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-homeInsurance" name="homeInsurance" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Assurance véhicule</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-vehicleInsurance" name="vehicleInsurance" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Frais de garde</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-careExpenses" name="careExpenses" value="0">
+				</div>
+			</div>	
+			<div class="spending-information">
+				<label>Impôts sur le revenu</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-incomeTaxes" name="incomeTaxes" value="0">
+				</div>
+			</div>	
+			<div class="spending-information">
+				<label>Impôts locaux</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-localTaxes" name="localTaxes" value="0">
+				</div>
+			</div>	
+			<div class="spending-subtitle">
+				<p>Les dépenses courantes</p>
+			</div>
+			<div class="spending-information">
+				<label>Courses (budget hebdomadaire)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-food" name="food" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Essence/transport en communs (budget hebdomadaire)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-transport" name="transport" value="0">
+				</div>
+			</div>
+			<div class="spending-information">
+				<label>Activités sportives et culturelles ( budget annuel)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-activity" name="activity" value="0">
+				</div>
+			</div>
+			<div class="spending-subtitle">
+				<p>Les dépenses occasionnelles</p>
+			</div>
+			<div class="spending-information">
+				<label>Sorties ( budget hebdomadaire)</label>
+				<div class="input">
+					<input type="number" class="ipt" id="field-exit" name="exit" value="0">
+				</div>
+			</div>
+			<div class="spending-subtitle">
+				<p>Les autres dépenses</p>
+				<button class="spending-add--line" id="spending4-btn--addLine"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Ajouter une ligne</button>	
+			</div>
+			<div class="add-spending">
+				
+			</div>				
+		</div>
+		<!-- *************  -->
+		<!--  SAVING PART   -->
+		<!-- *************  -->
+		<div class="saving">
+			<div class="saving-title">
+				<label>Epargne(s)</label>
+				<button class="saving-add--line" id="saving-btn--addLine"><i class="fa fa-plus-square-o" aria-hidden="true"></i>Ajouter une ligne</button>	
+				<div class="input">
+					<input type="number" class="ipt" id="field-saving" name="saving" value="0">
+				</div>	
+			</div>
+		</div>
+		<!-- ***********  -->
+		<!-- BUTTON PART  -->
+		<!-- ***********  -->
+		<div class="section-button">
+			<button id="btn-calculate">Calculer</button>
+			<button id="btn-reset">Reset</button>
+		</div>
+		<!-- ***********  -->
+		<!-- RESULT PART  -->
+		<!-- ***********  -->
+		<div class="result">
+			<div class="result-title">
+				<p class="result-title--left">Résultat</p>
+				<p class="result-title--right">Montant en €</p>	
+			</div>
+			<div class="result-information">
+				<p>Total dépenses</p>
+				<div class="total_spending">
+					<p> </p>
+				</div>
+			</div>
+			<div class="result-information">
+				<p>Total revenus</p>
+				<div class="total_earnings">
+					<p> </p>
+				</div>
+			</div>
+			<div class="result-information">
+				<p>Total épargne</p>
+				<div class="total_saving">
+					<p> </p>
+				</div>
+			</div>
+			<div class="result-information">
+				<p>Budget</p>
+				<div class="total_budget">
+					<p> </p>
+				</div>
+			</div>
+			<div class="proposed-activity">
+				
+			</div>
+		</div>			
+	</section>
+	<!-- ******  -->
+	<!-- FOOTER  -->  
+	<!-- ******  -->	
+	<footer>
+		<hr/>
+		<p>Application dévelloppé par Joris</p>
+	</footer>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

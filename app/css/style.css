@@ -1,0 +1,427 @@
+/*********************/
+/*       GLOBAL      */
+/*********************/
+
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+/*********************/
+/*       HEADER      */
+/*********************/
+
+header {
+	background-color: rgb(173,255,47);
+	height: 5em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 26px;
+	margin-bottom: 4em;
+}
+
+/*********************/
+/*      SECTION      */
+/*********************/
+
+section {
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+}
+
+/*********************/
+/*   EARNINGS PART   */
+/*********************/
+
+.earnings-title {
+	margin-top: 2em;
+	display: flex;
+}
+
+.earnings-title--left {
+	width: 70%;
+	margin: 0;
+	border: 2px solid black;
+	border-right: 0px;
+}
+
+.earnings-title--right {
+	width: 30%;
+	margin: 0;
+	border: 2px solid black;
+}
+
+.earnings-title p {
+	background-color: rgb(173,255,47);
+	height: 2em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+}
+
+.earnings-subtitle {
+	display: flex;
+	border: 2px solid black;
+	border-top: 0px;
+	background-color: #58545B;
+}
+
+.earnings-subtitle button {
+	width: 31%;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 18px;
+	font-style: italic;
+	padding: 0;
+	background-color: #58545B;
+	border: 0;
+	padding-right: 0.5em;
+}
+
+.earnings-subtitle i {
+	padding-right: 1em;
+}
+
+.earnings-subtitle p {
+	height: 2em;
+	width: 69%;
+	display: flex;
+	font-size: 26px;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+}
+
+.earnings-information {
+	display: flex;
+	border-top: 0px;
+}
+
+.earnings-information label {
+	background-color: #D6F599;
+	height: 2em;
+	width: 69%;
+	display: flex;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+	border: 2px solid black;
+	border-top: 0;
+}
+
+.input {
+	width: 31%;
+	display: flex;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.input input {
+	display: flex;
+	margin: auto;
+	width: 70%;
+	height: 50%;
+	font-size: 26px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+/*********************/
+/*   SPENDING PART   */
+/*********************/
+
+.spending-title {
+	margin-top: 2em;
+	display: flex;
+}
+
+.spending-title--left {
+	width: 70%;
+	margin: 0;
+	border: 2px solid black;
+	border-right: 0px;
+}
+
+.spending-title--right {
+	width: 30%;
+	margin: 0;
+	border: 2px solid black;
+}
+
+.spending-title p {
+	background-color: rgb(173,255,47);
+	height: 2em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+}
+
+.spending-subtitle {
+	display: flex;
+	border: 2px solid black;
+	border-top: 0px;
+	background-color: #58545B;
+}
+
+.spending-subtitle button {
+	width: 31%;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 18px;
+	font-style: italic;
+	padding: 0;
+	background-color: #58545B;
+	border: 0;
+	padding-right: 0.5em;
+}
+
+.spending-subtitle i {
+	padding-right: 1em;
+}
+
+.spending-subtitle p {
+	height: 2em;
+	width: 69%;
+	display: flex;
+	font-size: 26px;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+}
+
+.spending-information {
+	display: flex;
+	border-top: 0px;
+}
+
+.spending-information label {
+	background-color: #D6F599;
+	height: 2em;
+	width: 69%;
+	display: flex;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+	border: 2px solid black;
+	border-top: 0;
+}
+
+.input {
+	width: 31%;
+	display: flex;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.input input {
+	display: flex;
+	margin: auto;
+	width: 70%;
+	height: 50%;
+	font-size: 26px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+/*********************/
+/*    SAVING PART    */
+/*********************/
+
+.saving {
+	margin-top: 2em;
+}
+
+.saving-title {
+	display: flex;
+	border-top: 2px solid black;	
+}
+
+.saving label {
+	border: 2px solid black;
+	border-right: 0;
+	border-top: 0;
+	background-color: rgb(173,255,47);
+	height: 2em;
+	width: 38%;
+	display: flex;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+}
+
+.saving i {
+	padding-right: 1em;
+}
+
+.saving button {
+	border: 2px solid black;
+	border-left: 0;
+	border-top: 0;
+	width: 31%;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 18px;
+	font-style: italic;
+	padding: 0;
+	padding-right: 0.5em;
+	background-color: rgb(173,255,47);
+}
+
+.input {
+	width: 31%;
+	display: flex;
+
+}
+
+.input input {
+	display: flex;
+	margin: auto;
+	width: 70%;
+	height: 50%;
+	font-size: 26px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.saving-titleAdd {
+	display: flex;
+	border-top: 2px solid black;	
+}
+
+.saving-titleAdd label {
+	border: 2px solid black;
+	border-top: 0;
+	background-color: rgb(173,255,47);
+	height: 2em;
+	width: 69%;
+	display: flex;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+}
+
+.saving-titleAdd {
+
+}
+
+/*********************/
+/*    BUTTON PART    */
+/*********************/
+
+.section-button {	
+	margin-top: 2em;
+	display: flex;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.section-button button {
+	background-color: rgb(173,255,47);
+	height: 2em;
+	font-size: 26px;
+	width: 50%;
+	margin: 1em;
+	border: 2px solid black;	
+}
+
+.section-button button:hover {
+	background-color: rgba(173,255,47, 0.6);
+}
+
+/*********************/
+/*    RESULT PART    */
+/*********************/
+
+.result-title {
+	margin-top: 2em;
+	display: flex;
+}
+
+.result-title--left {
+	width: 70%;
+	margin: 0;
+	border: 2px solid black;
+	border-right: 0px;
+}
+
+
+.result-title--right {
+	width: 30%;
+	margin: 0;
+	border: 2px solid black;
+}
+
+.result-title p {
+	background-color: rgb(173,255,47);
+	height: 2em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+}
+
+.result-information {
+	display: flex;
+	border-top: 0px;
+}
+
+.result-information p {
+	background-color: #D6F599;
+	height: 2em;
+	width: 69%;
+	display: flex;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	font-size: 26px;
+	border: 2px solid black;
+	border-top: 0;
+}
+
+.total_earnings, .total_spending, .total_budget, .total_saving {
+	width: 31%;
+	display: flex;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.total_earnings p, .total_spending p, .total_saving p, .total_budget p {
+	display: flex;
+	margin: auto;
+	width: 70%;
+	height: 50%;
+	font-size: 26px;
+	padding: 0;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+/*********************/
+/* PROPOSED ACTIVITY */
+/*********************/
+
+.proposed-activity {
+	margin-top: 1em;
+	background-color: rgb(173,255,47);
+	height: 6em;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 0.5em;
+}
+
+/*********************/
+/*      FOOTER       */
+/*********************/
+
+footer hr {
+	border: 2px solid rgb(173,255,47);
+}
+
+footer p {
+	text-align: center;
+}
